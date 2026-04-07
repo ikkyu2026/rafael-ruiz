@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Terapia Individual"
-subtitle: "Terapia Gestalt Individual en Barcelona"
-image: "/images/terapeuta-individual-gestalt-gay-lgtb.png"
+title: Terapia Individual
+subtitle: Terapia Gestalt Individual en Barcelona
+image: /images/terapeuta-individual-gestalt-gay-lgtb.png
 permalink: /terapia-individual/
 ---
 
@@ -14,4 +14,4 @@ Nos hacemos conscientes de ello cuando notamos que algo no esta yendo como desea
 
 El encuadre desde el que parto es la **Terapia Gestalt**, que a través del darnos cuenta de lo que nos sucede, favorecemos la identificación de comportamientos que ya no nos sirven. Cuando los comprendemos y aceptamos podemos dejar de luchar contra ellos y reutilizar esa energía en nuevos y más sanos patrones de relación con el mundo y con uno mismo.
 
-Mi aportación como terapeuta es principalmente acompañarte en este proceso de reencuentro íntimo, y me sirvo principalmente de mi presencia y mi experiencia vital como soporte para estar a tu lado mientras tú vas descubriéndote y atreviéndote a ser quien deseas.
+Mi aportación como terapeuta es principalmente acompañarte en este proceso de r**eencuentro íntimo**, y me sirvo principalmente de mi presencia y mi experiencia vital como soporte para estar a tu lado mientras tú vas descubriéndote y atreviéndote a ser quien deseas.
