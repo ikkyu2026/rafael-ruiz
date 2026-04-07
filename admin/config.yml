@@ -1,0 +1,51 @@
+backend:
+  name: github
+  repo: ikkyu2026/rafael-ruiz
+  branch: gh-pages
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Páginas"
+    files:
+      - name: "rafael-ruiz"
+        label: "Rafael Ruiz"
+        file: "rafael-ruiz.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Subtítulo", name: "subtitle", widget: "string" }
+          - { label: "Imagen", name: "image", widget: "image" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/rafael-ruiz/" }
+          - { label: "Contenido", name: "body", widget: "markdown" }
+      - name: "terapia-individual"
+        label: "Terapia Individual"
+        file: "terapia-individual.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Subtítulo", name: "subtitle", widget: "string" }
+          - { label: "Imagen", name: "image", widget: "image" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/terapia-individual/" }
+          - { label: "Contenido", name: "body", widget: "markdown" }
+      - name: "terapia-de-pareja"
+        label: "Terapia de Pareja"
+        file: "terapia-de-pareja.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Subtítulo", name: "subtitle", widget: "string" }
+          - { label: "Imagen", name: "image", widget: "image" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/terapia-de-pareja/" }
+          - { label: "Contenido", name: "body", widget: "markdown" }
+      - name: "contacto"
+        label: "Contacto"
+        file: "contacto.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "contact" }
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Imagen contacto", name: "contact_image", widget: "image" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/contacto/" }
+          - { label: "Contenido", name: "body", widget: "markdown" }

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Ruiz</title>
+    <style>
+        :root { --principal: #734854; --footer: #8D8785; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            color: #555555;
+            line-height: 1.72;
+        }
+
+        /* ── HEADER ── */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #ffffff;
+            z-index: 1100;
+            padding: 0.5625rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .header-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img { max-height: 72px; }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav a {
+            color: var(--principal);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16.5px;
+        }
+
+        a {
+            color: var(--principal);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ── HERO ── */
+        .hero {
+            height: 100vh;
+            min-height: 720px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 92%;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform 0.6s ease, opacity 0.6s ease;
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+        .hero:hover .hero-photo {
+            transform: scale(1.06);
+            opacity: 0.7;
+        }
+
+        .hero-caption {
+            position: relative;
+            z-index: 2;
+            text-align: right;
+            padding: 0 45px 110px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        .hero-caption h1 {
+            font-size: 35px;
+            color: #734854;
+            font-weight: 700;
+        }
+
+        .hero-caption p {
+            font-size: 18px;
+            color: #734854;
+        }
+
+        /* ── QUOTE (home) ── */
+        .quote {
+            padding: 80px 30px;
+            text-align: center;
+            font-size: 26px;
+            font-style: italic;
+            color: var(--footer);
+            background: #f8f5f3;
+        }
+
+        /* ── CONTENT PAGES ── */
+        .content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 220px 30px 80px;
+        }
+
+        h1 {
+            font-size: 34px;
+            color: var(--principal);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            color: #555555;
+            margin-bottom: 50px;
+        }
+
+        .photo {
+            width: 100%;
+            max-width: 1100px;
+            height: auto;
+            margin: 45px auto 60px;
+            display: block;
+            border-radius: 6px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.18);
+            transition: transform 0.6s ease, opacity 0.6s ease;
+            opacity: 0.8;
+        }
+
+        .photo:hover {
+            transform: scale(1.05);
+            opacity: 0.7;
+        }
+
+        /* ── QUOTE SEPARATOR (rafael-ruiz page) ── */
+        .quote-separator {
+            width: 100%;
+            height: 2px;
+            background: #734854;
+            opacity: 0.35;
+            margin: 65px 0 48px 0;
+        }
+
+        .quote-text {
+            font-size: 22px;
+            font-style: italic;
+            color: #555555;
+            text-align: justify;
+            margin-bottom: 12px;
+        }
+
+        .quote-author {
+            font-size: 17px;
+            color: #734854;
+            text-align: right;
+            font-weight: 600;
+        }
+
+        /* ── TEXT CONTENT (2 columns) ── */
+        .text-content {
+            margin-top: 75px;
+            font-size: 17.2px;
+            line-height: 1.78;
+            color: #444444;
+            columns: 2;
+            column-gap: 55px;
+            text-align: justify;
+        }
+
+        .text-content p {
+            margin-bottom: 28px;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        .highlight {
+            color: var(--principal);
+            font-weight: 600;
+        }
+
+        .text-content strong {
+            color: #734854;
+            font-weight: 600;
+        }
+
+        /* ── CONTACT ── */
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+            margin-top: 40px;
+        }
+
+        .contact-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-text .text-content {
+            columns: 1;
+            margin-top: 0;
+        }
+
+        .contact-photo {
+            flex: 0 0 300px;
+            text-align: right;
+        }
+
+        .contact-photo img {
+            width: 300px;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            transition: transform 0.6s ease, opacity 0.6s ease;
+            opacity: 0.8;
+        }
+
+        .contact-photo img:hover {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+
+        .contact-name {
+            color: var(--principal);
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            background: #8D8785;
+            color: #ffffff;
+            padding: 45px 35px 35px;
+            text-align: center;
+            font-size: 14.5px;
+        }
+
+        footer nav {
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        footer nav a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        footer nav a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            font-size: 13px;
+            opacity: 0.85;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1200px) {
+            nav ul { gap: 22px; }
+            nav a { font-size: 15px; }
+            .header-inner { padding: 0 20px; }
+            .logo img { max-height: 64px; }
+        }
+
+        @media (max-width: 992px) {
+            header { padding: 0.5rem 0; }
+            nav ul { gap: 16px; }
+            nav a { font-size: 13.5px; }
+            .header-inner { padding: 0 15px; }
+            .logo img { max-height: 56px; }
+            .text-content { columns: 1; column-gap: 0; }
+            .photo { max-width: 100%; }
+            .text-content { margin-top: 60px; }
+            .contact-info { flex-direction: column; }
+            .contact-photo { text-align: center; }
+        }
+
+        @media (max-width: 768px) {
+            header { padding: 0.375rem 0; }
+            nav ul { gap: 12px; }
+            nav a { font-size: 12.5px; }
+            .logo img { max-height: 48px; }
+        }
+
+        @media (max-width: 600px) {
+            .header-inner { flex-direction: column; gap: 8px; padding: 6px 12px; }
+            nav ul { gap: 6px 16px; justify-content: center; }
+            nav a { font-size: 12px; }
+            .logo img { max-height: 42px; }
+        }
+
+        @media (max-width: 420px) {
+            nav ul { gap: 4px 12px; }
+            nav a { font-size: 11px; font-weight: 500; }
+            .logo img { max-height: 36px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <a href="/" class="logo">
+            <img src="/images/logo.png" alt="Rafael Ruiz">
+        </a>
+        <nav>
+            <ul id="mainMenu">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/rafael-ruiz/">Rafael Ruiz</a></li>
+                <li><a href="/terapia-individual/">Terapia Individual</a></li>
+                <li><a href="/terapia-de-pareja/">Terapia de Pareja</a></li>
+                <li><a href="#">Grupos de crecimiento</a></li>
+                <li><a href="/contacto/">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<div class="content">
+    <h1>Rafael Ruiz</h1>
+    
+    <p class="subtitle">Psicólogo y Terapeuta Gestalt – Corporal</p>
+    
+
+    
+    <img src="/images/psicologo-terapeuta-gestalt-rafael-ruiz.png" alt="Rafael Ruiz" class="photo">
+    
+
+    
+    <div class="quote-separator"></div>
+    <div class="quote-text">"Vivir en paz conmigo mismo, considero es uno de los objetivos más importantes y satisfactorios en mi vida"</div>
+    
+    <div class="quote-author">Rafael Ruiz</div>
+    
+    
+
+    <div class="text-content">
+        <p><strong>Mi experiencia profesional siempre ha girado alrededor del otro</strong>. Durante 10 años trabajé con personas con <strong>problemas de adicción</strong>. Fueron años <strong>en los que aprendí a mirar el dolor de los demás</strong>. Intenté ayudarles a mirar la vida de frente en vez de a través de alguna sustancia. Fueron momentos difíciles por mi propia inexperiencia y por la dificultad de luchar contra una sustancia.</p>
+
+<p><strong>Aprendí que si uno mismo no quiere salir de donde está, nadie te puede ayudar</strong>.</p>
+
+<p>Decidí cambiar mi orientación profesional para empezar a hacer <strong>psicoterapia</strong> con aquellos que voluntariamente lo desearan, y es cuando comencé mi proyecto más personal, <strong>Nostrum</strong>, mi <strong>centro de terapias en Barcelona</strong>, allá por 1996, orientada inicialmente a gays y lesbianas.</p>
+
+<p>Siendo yo gay sentía que podía aportar tanto mi experiencia personal como profesional en ese espacio tan especial que para mí es el encuentro terapéutico. Me siento muy afortunado de haberlo logrado.</p>
+
+<p>Hoy trabajo con todas aquellas personas que, independientemente de su orientación sexual, desean iniciar un viaje por el interior de sí mismos.</p>
+
+<p>En 2002 inicié mi proceso terapéutico a través de Psicología Gestalt, que me abrió la Mente y el Corazón y me ayudó a verme y a ver al otro con una mirada más profunda, integradora, honesta y, sobre todo, más amorosa.</p>
+
+<p>La <strong>Terapia Corporal Integrativa</strong>, con Antonio Pacheco y el <strong>Proceso SAT</strong> con <strong>Claudio Naranjo</strong>, me han permitido contactar con el <strong>cuerpo como vehículo</strong> que me acompaña en esta vida y con el corazón que me permite vivirla en plenitud.</p>
+
+<p>En todo este camino, la meditación ha sido mi compañera que me ha ayudado a contactar y sostener mi vulnerabilidad y mi fortaleza. Como una fiel amiga, continúa a mi lado, ayudándome a recolocarme y reencontrarme.</p>
+
+<p>Y en este momento, el <strong>baile y el movimiento</strong> a través de 5 Ritmos, me ayudan a <strong>integrar</strong> todo lo aprendido hasta ahora y a <strong>danzar la vida con intensidad y alegría</strong>, dejándome gozar de la libertad que he aprendido a darme a mí mismo.</p>
+
+    </div>
+</div>
+
+
+<footer>
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/rafael-ruiz/">Rafael Ruiz</a>
+        <a href="/terapia-individual/">Terapia Individual</a>
+        <a href="/terapia-de-pareja/">Terapia de Pareja</a>
+        <a href="#">Grupos de crecimiento</a>
+        <a href="/contacto/">Contacto</a>
+    </nav>
+    <div class="copyright">© Copyright 2015 - 2026 Rafael Ruiz</div>
+</footer>
+
+
+</body>
+</html>

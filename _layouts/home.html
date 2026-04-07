@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section class="hero">
+    <div class="hero-photo" style="background-image: url('{{ "/images/hero.png" | relative_url }}');"></div>
+    <div class="hero-caption">
+        <h1>{{ page.hero_title }}</h1>
+        <p>{{ page.hero_subtitle }}</p>
+    </div>
+</section>
+
+<section class="quote">
+    "{{ page.quote }}"<br><br>
+    {{ page.quote_author }}
+</section>
