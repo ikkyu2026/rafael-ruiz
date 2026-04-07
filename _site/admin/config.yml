@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: ikkyu2026/rafael-ruiz
-  branch: gh-pages
+  branch: main
 
 media_folder: "images"
 public_folder: "/images"
