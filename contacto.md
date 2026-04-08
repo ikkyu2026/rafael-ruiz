@@ -3,6 +3,7 @@ layout: contact
 title: "Contacto"
 contact_image: "/images/rr1-300x190.png"
 permalink: /contacto/
+redirect_from: ["/gestalt-contacto/"]
 description: "Contacta con Rafael Ruiz, psicólogo y terapeuta Gestalt en Barcelona. Teléfono y email."
 ---
 

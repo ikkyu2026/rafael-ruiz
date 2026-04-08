@@ -1,8 +1,11 @@
 title: "Rafael Ruiz | Psicólogo y Terapeuta Gestalt"
 url: "https://rafaelruiz-psicologogestalt.es"
-baseurl: ""
+baseurl: "/rafael-ruiz"
 markdown: kramdown
 permalink: pretty
+
+plugins:
+  - jekyll-redirect-from
 
 kramdown:
   input: GFM

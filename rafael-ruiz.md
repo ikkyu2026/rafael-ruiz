@@ -6,6 +6,7 @@ image: "/images/psicologo-terapeuta-gestalt-rafael-ruiz.png"
 quote: "Vivir en paz conmigo mismo, considero es uno de los objetivos más importantes y satisfactorios en mi vida"
 quote_author: "Rafael Ruiz"
 permalink: /rafael-ruiz/
+redirect_from: ["/rafael-ruiz-terapia-gestalt-barcelona/"]
 description: "Conoce a Rafael Ruiz, psicólogo y terapeuta Gestalt-Corporal en Barcelona desde 1996."
 ---
 

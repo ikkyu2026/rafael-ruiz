@@ -4,6 +4,7 @@ title: "Terapia de Pareja"
 subtitle: "Terapia para parejas"
 image: "/images/01.png"
 permalink: /terapia-de-pareja/
+redirect_from: ["/terapia-pareja-gestalt/"]
 description: "Terapia de pareja en Barcelona. Acompañamiento en el proceso de reencuentro."
 ---
 
