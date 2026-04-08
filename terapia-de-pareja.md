@@ -4,6 +4,7 @@ title: "Terapia de Pareja"
 subtitle: "Terapia para parejas"
 image: "/images/01.png"
 permalink: /terapia-de-pareja/
+description: "Terapia de pareja en Barcelona. Acompañamiento en el proceso de reencuentro."
 ---
 
 La terapia de pareja es una opción que surge en los momentos de **desencuentro y conflicto con la persona amada**, cuando ya se han intentado diferentes maneras de afrontar las dificultades en la relación y no se han obtenido los resultados esperados.
