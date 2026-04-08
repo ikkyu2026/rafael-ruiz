@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ site.url }}/images/psicologo-terapeuta-gestalt-rafael-ruiz.png">
+    <meta property="og:locale" content="es_ES">
+    <meta name="twitter:card" content="summary_large_image">
     <style>
         :root { --principal: #734854; --footer: #8D8785; }
         * { margin:0; padding:0; box-sizing:border-box; }
@@ -322,6 +332,24 @@
             .logo img { max-height: 36px; }
         }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Rafael Ruiz - Psicólogo y Terapeuta Gestalt",
+  "url": "https://rafaelruiz-psicologogestalt.es",
+  "telephone": "+34609383584",
+  "email": "rafaelruiz@copc.cat",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Barcelona",
+    "addressCountry": "ES"
+  },
+  "description": "Psicólogo y Terapeuta Gestalt-Corporal en Barcelona. Terapia individual, de pareja y grupos de crecimiento.",
+  "priceRange": "$$",
+  "image": "https://rafaelruiz-psicologogestalt.es/images/psicologo-terapeuta-gestalt-rafael-ruiz.png"
+}
+</script>
 </head>
 <body>
 
