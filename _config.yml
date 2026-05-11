@@ -9,3 +9,7 @@ plugins:
 
 kramdown:
   input: GFM
+
+# _config.yml — agregar esto:
+include:
+  - _pages
