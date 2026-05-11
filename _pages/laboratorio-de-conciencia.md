@@ -2,7 +2,7 @@
 layout: page
 title: Laboratorio de Conciencia
 subtitle: Un viaje a tu esencia
-image: /images/IMG_9109.png
+image: /images/002.png
 permalink: /retiro-conciencia-barcelona-gestalt/
 ---
 
