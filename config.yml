@@ -63,3 +63,10 @@ collections:
 
       include:
   - _pages
+
+backend:
+  name: github
+  repo: ikkyu2026/rafael-ruiz
+  branch: main
+
+publish_mode: editorial_workflow
