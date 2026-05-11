@@ -49,3 +49,14 @@ collections:
           - { label: "Imagen contacto", name: "contact_image", widget: "image" }
           - { label: "Permalink", name: "permalink", widget: "hidden", default: "/contacto/" }
           - { label: "Contenido", name: "body", widget: "markdown" }
+  - name: "nuevas-paginas"
+    label: "Nueva Página"
+    folder: "_pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Subtítulo", name: "subtitle", widget: "string" }
+      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Contenido", name: "body", widget: "markdown" }
