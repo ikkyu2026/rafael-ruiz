@@ -3,7 +3,7 @@ layout: page
 title: Laboratorio de Conciencia
 subtitle: Un viaje a tu esencia
 image: /images/IMG_0187.HEIC
-permalink: retiro-conciencia-barcelona-gestalt
+permalink: /retiro-conciencia-barcelona-gestalt/
 ---
 
 Laboratorio de Conciencia: Un viaje hacia tu esencia
