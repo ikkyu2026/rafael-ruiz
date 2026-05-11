@@ -2,13 +2,11 @@
 layout: page
 title: Laboratorio de Conciencia
 subtitle: Un viaje a tu esencia
-image: /images/IMG_8935.JPG
+image: /images/IMG_9109.png
 permalink: /retiro-conciencia-barcelona-gestalt/
 ---
 
-**Laboratorio de Conciencia: Un viaje hacia tu esencia**
-
-Laboratorio de Conciencia es un espacio donde ser investigadores de nuestra propia conciencia.
+**Laboratorio de Conciencia** es un espacio donde ser investigadores de nuestra propia conciencia.
 
 La esencia del **Tantra Kriya Yoga** y el **Qi Gong**, junto con técnicas ancestrales de ampliación de conciencia, combinados con el **movimiento, la respiración, la voz y la naturaleza** que nos rodea, serán nuestras vías para activar nuestra energía vital, esa fuerza que yace latente en nuestro interior. Cada práctica es un encuentro con nosotros mismos, un proceso profundo de **transformación personal y conexión espiritual**, integrando distintas tradiciones en un entorno seguro y contenedor.
 
