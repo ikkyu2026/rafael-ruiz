@@ -60,3 +60,6 @@ collections:
       - { label: "Subtítulo", name: "subtitle", widget: "string" }
       - { label: "Imagen", name: "image", widget: "image" }
       - { label: "Contenido", name: "body", widget: "markdown" }
+
+      include:
+  - _pages
