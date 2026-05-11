@@ -22,4 +22,6 @@ Mv· [609 383 584](tel:609383584)
 
 W· [rafaelruiz-psicologogestalt.es](https://www.rafaelruiz-psicologogestalt.es)
 
+L· [Rafael Ruiz Psicologo](https://es.linkedin.com/in/rafael-ruiz-l%C3%B3pez-28b65151)
+
 IG· [`@rafaelmruizlopez`](https://www.instagram.com/rafaelmruizlopez)
