@@ -13,6 +13,9 @@ La esencia del **Tantra Kriya Yoga** y el **Qi Gong**, junto con técnicas ances
 Laboratorio de Conciencia propone un **profundo viaje interior** donde la energía se revela como herramienta de transformación personal. **Disolver lo que nos limita, soltar con amor y suavidad**, y dejarnos sostener por una presencia fluida y consciente: ese es el camino para redescubrir nuestra autenticidad y vivir desde la esencia.
 
 <div class="video-vertical">
-  <iframe src="https://archive.org/embed/psicologo-barcelona-rafael-ruiz"
-    allowfullscreen></iframe>
+  <video controls playsinline preload="metadata"
+    poster="/images/011 copia.png"
+    src="https://archive.org/download/psicologo-barcelona-rafael-ruiz/psicologo-barcelona-rafael-ruiz.mp4">
+  </video>
 </div>
+
