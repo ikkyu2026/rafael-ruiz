@@ -15,7 +15,7 @@ Laboratorio de Conciencia propone un **profundo viaje interior** donde la energ√
 <div class="video-vertical">
   <video controls playsinline preload="metadata"
     poster="/images/011 copia.png"
-    src="https://archive.org/download/psicologo-barcelona-rafael-ruiz/psicologo-barcelona-rafael-ruiz.mp4">
-  </video>
+    src="[(https://archive.org/download/psicologo-barcelona-rafael-ruiz/rafael-ruiz-gestalt-psicologo-barcelona.MP4)>"]
+    </video>
 </div>
 
