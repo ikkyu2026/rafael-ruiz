@@ -1,0 +1,50 @@
+backend:
+  name: github
+  repo: ikkyu2026/rafael-ruiz
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "images"
+public_folder: "/images"
+
+locale: es
+
+collections:
+  - name: "pages"
+    label: "Páginas"
+    label_singular: "Página"
+    folder: "_pages"
+    create: true
+    delete: false
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "page"
+      - label: "Título de la página"
+        name: "title"
+        widget: "string"
+        hint: "Nombre que aparece en el navegador y en el menú"
+      - label: "Subtítulo"
+        name: "subtitle"
+        widget: "string"
+        required: false
+        hint: "Frase corta debajo del título principal"
+      - label: "Imagen de cabecera"
+        name: "image"
+        widget: "image"
+        required: false
+        hint: "Imagen que aparece en la parte superior de la página"
+      - label: "URL de la página"
+        name: "permalink"
+        widget: "string"
+        hint: "Dirección web. Ejemplo: /mi-pagina/ (con barras al inicio y al final)"
+      - label: "Contenido"
+        name: "body"
+        widget: "markdown"
+        modes: ["rich_text", "raw"]
+        hint: "Escribe aquí el contenido de la página. Usa la barra de herramientas para dar formato."
