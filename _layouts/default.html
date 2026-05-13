@@ -332,11 +332,11 @@
             .logo img { max-height: 36px; }
         }
 
-        /* ── VIDEO VERTICAL ── */
+      /* ── VIDEO VERTICAL ── */
 .video-vertical {
     break-inside: avoid;
     column-span: all;
-    max-width: 360px;
+    max-width: clamp(260px, 40%, 420px);
     margin: 2em auto;
 }
 
@@ -350,10 +350,9 @@
 
 @media (max-width: 600px) {
     .video-vertical {
-        max-width: 100%;
+        max-width: 85%;
     }
-}    
-
+}
         
     </style>
     <script type="application/ld+json">
