@@ -3,12 +3,8 @@ backend:
   repo: ikkyu2026/rafael-ruiz
   branch: main
 
-publish_mode: editorial_workflow
-
 media_folder: "images"
 public_folder: "/images"
-
-locale: es
 
 collections:
   - name: "pages"
@@ -18,8 +14,6 @@ collections:
     create: true
     delete: false
     slug: "{{slug}}"
-    editor:
-      preview: true
     fields:
       - label: "Layout"
         name: "layout"
@@ -42,9 +36,8 @@ collections:
       - label: "URL de la página"
         name: "permalink"
         widget: "string"
-        hint: "Dirección web. Ejemplo: /mi-pagina/ (con barras al inicio y al final)"
+        hint: "Ejemplo: /mi-pagina/ (con barras al inicio y al final)"
       - label: "Contenido"
         name: "body"
         widget: "markdown"
-        modes: ["rich_text", "raw"]
-        hint: "Escribe aquí el contenido de la página. Usa la barra de herramientas para dar formato."
+        hint: "Usa la barra de herramientas para dar formato al texto"
